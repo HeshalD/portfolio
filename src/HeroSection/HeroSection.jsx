@@ -29,7 +29,7 @@ function HeroSection() {
                 <h1 className="text-[85px] deop-shadow-lg font-gilroyRegular text-defaultWhite mt-[-50px]">
                     Heshal Dissanayake
                 </h1>
-                <h2 className="text-[25px] drop-shadow-[0_0_20px_rgba(255,255,255,0.6),0_0_40px_rgba(255,255,255,0.3)] font-gilroyRegular text-defaultWhite">Innovation through Inspiration</h2>
+                <h2 className="text-[25px] drop-shadow-[0_0_20px_rgba(255,255,255,0.6),0_0_40px_rgba(255,255,255,0.3)] font-gilroyRegular text-defaultWhite">Inspiration through Inovation</h2>
             </div>
         </div>
     )
