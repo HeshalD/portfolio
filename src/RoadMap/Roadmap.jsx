@@ -193,7 +193,7 @@ function Roadmap() {
     }, []);
 
     return (
-        <section className="relative min-h-[100vh] max-h-[150vh] py-20 text-defaultWhite">
+        <section className="relative min-h-[150vh] py-20 text-defaultWhite">
 
             <div className="relative mx-auto max-w-6xl">
                 <div className="flex relative items-start" ref={containerRef}>

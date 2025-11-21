@@ -20,8 +20,8 @@ function AboutMe() {
 
   return (
 
-    <div className="relative mx-auto mt-20 w-[150vh] h-[1300px] p-8 rounded-3xl border shadow-2xl backdrop-blur-md bg-defaultWhite/10 border-defaultWhite/20 ">
-      {/* Rotating Outer Circle */}
+    <div className="relative mx-auto mt-20 w-[150vh] h-[1000px] p-8 rounded-3xl border shadow-2xl backdrop-blur-md bg-defaultWhite/10 border-defaultWhite/20 ">
+      {/* Rotating Outer Circle 
       <div className="absolute inset-0 rounded-full animate-spin-slow">
         {dots.map((dot) => (
           <div
@@ -38,7 +38,7 @@ function AboutMe() {
 
       {/* Inner Content with Glass Effect */}
 
-      <div className="flex absolute inset-0 flex-col justify-center items-center mx-[90px] my-[5px] text-center">
+      <div className="flex absolute inset-0 flex-col justify-center items-center my-[5px]  text-center">
 
       <ScrollFloat
           animationDuration={1}
@@ -55,7 +55,7 @@ function AboutMe() {
           <img
             src="./images/me.jpg"
             alt="me"
-            className='h-[300px] w-auto rounded-[12px] mb-[50px] shadow-lg'
+            className='h-[300px] w-auto rounded-[12px] mb-[50px] shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl'
           />
 
           <div className="space-y-4">
