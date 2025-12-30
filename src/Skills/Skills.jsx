@@ -20,10 +20,15 @@ import {
   SiPandas,
   SiNumpy,
   SiScikitlearn,
+  SiPydantic,
+  SiPytorch,
+  SiFastapi,
+  SiApachehadoop,
   SiGit,
   SiPostman,
   SiJupyter,
   SiDocker,
+  SiAmazon,
 } from 'react-icons/si';
 
 // From Font Awesome
@@ -56,11 +61,17 @@ const iconMap = {
   NumPy: SiNumpy,
   Matplotlib: SiPython, // fallback
   'Scikit-learn': SiScikitlearn,
+  Pydantic: SiPydantic,
+  Pytorch: SiPytorch,
+  FastAPI: SiFastapi,
   Git: SiGit,
   'VS Code': VscVscode,
   Postman: SiPostman,
   Jupyter: SiJupyter,
   Docker: SiDocker,
+  AWS: SiAmazon,
+  Hadoop: SiApachehadoop,
+  Azure: null, // fallback to text
   'MERN Stack': SiReact, // symbolic fallback
 };
 
@@ -73,7 +84,7 @@ function Skills() {
       description: 'These are the current programing languages that I proficent in.',
     },
     {
-      title: 'Frameworks & Tools',
+      title: 'Web Development',
       color: 'rgba(255, 215, 0, 0.2)',
       items: [
         'MERN Stack',
@@ -82,21 +93,21 @@ function Skills() {
         'Express',
         'MongoDB',
         'Tailwind',
-        'Bootstrap',
+        'FastAPI',
       ],
-      description: 'These are the current frameworks and tools I currently use in my projects.',
+      description: 'These are the current frameworks and tools I currently use in my web development projects.',
     },
     {
-      title: 'Learning',
+      title: 'Machine Learning & Data Science',
       color: 'rgba(255, 99, 132, 0.2)',
-      items: ['Pandas', 'NumPy', 'Matplotlib', 'Scikit-learn'],
-      description: 'I am currently learning these languages',
+      items: ['Pandas', 'NumPy', 'Matplotlib', 'Scikit-learn', 'Pydantic', 'Pytorch'],
+      description: 'I currently have a strong understanding of these machine learning and data science tools.',
     },
     {
-      title: 'Other Tools',
+      title: 'Cloud Services & Other Tools',
       color: 'rgba(0, 255, 138, 0.2)',
-      items: ['Git', 'VS Code', 'Postman', 'Jupyter', 'Docker'],
-      description: 'These are the some other tools I am familiar with.',
+      items: ['Git', 'VS Code', 'Postman', 'Jupyter', 'Docker', 'AWS', 'Azure','Hadoop'],
+      description: 'These are some of the cloud services and other tools I am familiar with.',
     },
   ];
 

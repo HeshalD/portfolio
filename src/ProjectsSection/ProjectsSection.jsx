@@ -1,50 +1,41 @@
 import React from 'react';
-import { SiReact, SiMongodb, SiNodedotjs, SiTailwindcss, SiExpress } from 'react-icons/si';
+import { SiReact, SiMongodb, SiNodedotjs, SiTailwindcss, SiExpress, SiFastapi, SiPython, SiPydantic, SiScikitlearn, SiPytorch, SiDocker, SiGithub} from 'react-icons/si';
 
 const projects = [
     {
         id: 1,
-        title: 'Sojourn Parking',
+        title: 'Cuisinise',
         year: '2025',
-        description: 'Online parking reservation and emergency services platform.',
-        status: 'In Progress',
-        image: '/images/sojournLogo.png',
-        tech: [SiReact, SiNodedotjs, SiMongodb],
+        description: 'Built an agent-based food intelligence platform with a FastAPI orchestrator that coordinates multiple ML microservices, delivers real-time recommendations, and integrates LLM-powered insights with a MERN backend and secure JWT-based chat persistence.',
+        status: 'Launched',
+        image: '/images/CusiniseLogo.png',
+        tech: [SiPython, SiPydantic, SiScikitlearn, SiPytorch, SiDocker, SiReact, SiNodedotjs, SiExpress, SiMongodb],
         imageOnTop: true,
-        link: 'https://sojournparking.example.com',
+        link: 'https://cuisinise.vercel.app/',
+        github: 'https://github.com/HeshalD/Cuisinise'
     },
     {
         id: 2,
+        title: 'RainCheckAUS',
+        year: '2025',
+        description: 'Developed and deployed a machine learning–driven rainfall prediction system using Logistic Regression and XGBoost, served via a FastAPI inference layer and containerized with Docker for scalable, end-to-end deployment..',
+        status: 'Launched',
+        image: '/images/RainCheckAUSLogo.png',
+        tech: [SiPython, SiPydantic, SiScikitlearn, SiDocker, SiReact, SiNodedotjs, SiExpress, SiMongodb],
+        imageOnTop: true,
+        link: 'https://rain-check-aus-frontend.vercel.app/',
+        github: 'https://github.com/HeshalD/RainCheckAUS'
+    },
+    {
+        id: 4,
         title: 'CeylonTopGuide',
         year: '2025',
-        description: 'Tour guide booking platform connecting locals and tourists.',
+        description: 'Designed and deployed a scalable tourism discovery platform for Sri Lanka, featuring dynamic content retrieval, curated destination data, and robust backend APIs to enhance user exploration and engagement.',
         status: 'Launched',
         image: '/images/ceylonLogo.jpg',
         tech: [SiReact, SiTailwindcss, SiNodedotjs, SiExpress, SiMongodb],
         imageOnTop: false,
         link: 'https://ceylontopguide.com',
-    },
-    {
-        id: 3,
-        title: 'AquaFiles',
-        year: '2025',
-        description: 'Government document upload and connection registration system.',
-        status: 'In Progress',
-        image: '/images/aquaLogo.jpg',
-        tech: [SiReact, SiTailwindcss, SiNodedotjs, SiExpress, SiMongodb],
-        imageOnTop: true,
-        link: 'https://aquafiles.example.com',
-    },
-    {
-        id: 4,
-        title: 'GigNotes',
-        year: '2025',
-        description: 'A band management system for bands to keep track of essential documents and details.',
-        status: 'Pending',
-        image: '/images/gigLogo.jpg',
-        tech: [SiReact, SiTailwindcss, SiNodedotjs, SiExpress, SiMongodb],
-        imageOnTop: false,
-        link: 'https://gignotes.example.com',
     },
 ];
 
@@ -63,7 +54,7 @@ function ProjectsSection() {
                 </div>
 
                 {/* Projects Grid */}
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                     {projects.map((project) => (
                         <a
                             key={project.id}
@@ -124,8 +115,22 @@ function ProjectsSection() {
                                 </span>
                             </div>
 
-                                {/* Hover Arrow */}
-                                <div className="flex justify-end">
+                                {/* Action Buttons */}
+                                <div className="flex justify-end items-center gap-3 pt-2">
+                                    {/* GitHub Button */}
+                                    {project.github && (
+                                        <a
+                                            href={project.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center justify-center w-8 h-8 rounded-full border transition-all duration-300 bg-defaultWhite/10 border-defaultWhite/20 hover:bg-defaultWhite/20 hover:border-primaryCyan/50 hover:scale-105"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            <SiGithub className="text-sm text-defaultWhite hover:text-primaryCyan" />
+                                        </a>
+                                    )}
+                                    
+                                    {/* Hover Arrow */}
                                     <div className="flex justify-center items-center w-8 h-8 rounded-full border transition-all duration-300 bg-primaryCyan/20 border-primaryCyan/30 group-hover:bg-primaryCyan group-hover:scale-110">
                                         <svg className="w-4 h-4 transition-colors duration-300 text-primaryCyan group-hover:text-defaultBlack" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

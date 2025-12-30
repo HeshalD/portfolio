@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { SiC, SiJavascript, SiPython, SiMongodb, SiReact, SiNodedotjs, SiHtml5, SiCss3, SiPandas, SiNumpy, SiScikitlearn, SiPlotly } from 'react-icons/si';
+import { SiC, SiJavascript, SiPython, SiMongodb, SiReact, SiNodedotjs, SiHtml5, SiCss3, SiPandas, SiNumpy, SiScikitlearn, SiPlotly,SiAmazon,SiApachehadoop, SiPytorch, SiFastapi, SiPydantic, SiDocker, SiApachespark, SiApachehive, SiExpress, SiTailwindcss,SiPostman } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 
 const milestones = [
@@ -33,30 +33,40 @@ const milestones = [
                 <SiMongodb />
                 <SiReact />
                 <SiNodedotjs />
+                <SiExpress />
+                <SiTailwindcss/>
+                <SiDocker/>
+                <SiPostman/>
             </div>
         ),
     },
     {
-        title: 'Exploring Data Science',
-        description: 'Dived into Python libraries like Pandas and NumPy.',
+        title: 'Exploring Data Mining, Machine Learning, and Data Science',
+        description: 'Started creating web applications utilizing Data Mining and Machine Learning techniques.',
         date: '2025',
         icon: (
             <div className="flex space-x-2 text-2xl text-green-300">
                 <SiPython />
                 <SiPandas />
                 <SiNumpy />
+                <SiScikitlearn />
+                <SiPlotly />
+                <SiFastapi/>
+                <SiPydantic />
+                <SiPytorch />
             </div>
         ),
     },
     {
-        title: 'Learning ML Tools',
-        description: 'Currently learning Scikit-learn and Matplotlib.',
+        title: 'Cloud Computing and Massive Data Processing',
+        description: 'Delved into cloud computing and massive data processing solutions.',
         date: '2025',
         icon: (
             <div className="flex space-x-2 text-2xl text-green-300">
-                <SiPython />
-                <SiScikitlearn />
-                <SiPlotly />
+                <SiAmazon />
+                <SiApachehadoop />
+                <SiApachespark />
+                <SiApachehive />
             </div>
         ),
     },

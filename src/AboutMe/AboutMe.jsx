@@ -60,19 +60,19 @@ function AboutMe() {
 
           <div className="space-y-4">
             <p className='font-gilroyLight text-defaultWhite text-[15px] leading-relaxed'>
-              Hi, I'm Heshal — a passionate full-stack website developer with experience in building dynamic, user-focused applications across multiple platforms.
+              Hi, I’m Heshal Dissanayake, a Data Science undergraduate and full-stack developer with a strong focus on building intelligent, scalable, and data-driven applications        
             </p>
 
             <p className='font-gilroyLight text-defaultWhite text-[15px] leading-relaxed'>
-              I've worked extensively with the MERN stack, as well as Java and PHP-based web solutions. Beyond the browser, I have hands-on experience in mobile app development using Kotlin, and I'm currently expanding my skills by learning React Native to build cross-platform apps more efficiently.
+              I specialize in developing end-to-end systems that combine modern web technologies with machine learning and cloud-based architectures.
             </p>
 
             <p className='font-gilroyLight text-defaultWhite text-[15px] leading-relaxed'>
-              As a data science undergraduate, I'm also exploring the intersection of software development and intelligent data-driven systems — combining technical implementation with analytical thinking.
+              My experience spans MERN stack development, FastAPI-based ML services, and containerized deployments using Docker.
             </p>
 
             <p className='font-gilroyLight text-defaultWhite text-[15px] leading-relaxed'>
-              Whether it's front-end interfaces, back-end architecture, or mobile platforms, I enjoy creating solutions that are both functional and thoughtfully designed.
+              I’ve worked on projects ranging from AI-powered recommendation platforms to full-stack travel and analytics systems, integrating data pipelines, predictive models, and intuitive user experiences. Passionate about turning data into impactful solutions, I enjoy building products that are both technically robust and thoughtfully designed.
             </p>
           </div>
         </div>

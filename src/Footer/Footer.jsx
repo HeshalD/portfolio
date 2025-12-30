@@ -14,8 +14,8 @@ function Footer() {
     },
     {
       title: 'LinkedIn',
-      value: 'https://linkedin.com/in/heshal',
-      link: 'https://linkedin.com/in/heshal',
+      value: 'https://www.linkedin.com/in/heshal-dissanayake/',
+      link: 'https://www.linkedin.com/in/heshal-dissanayake/',
       icon: FaLinkedin
     },
     {
